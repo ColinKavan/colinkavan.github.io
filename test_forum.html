@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Snipcart Templates</title>
+</head>
+<body>
+  <div id="snipcart-templates">
+
+    <billing section="bottom">
+      <fieldset class="snipcart-form__set">
+        <legend class="snipcart__font--subtitle">
+          Order questionnaire
+        </legend>
+
+        <div class="snipcart-form__field">
+          <snipcart-label for="customerType" class="snipcart__font--tiny">
+            Which best describes you?
+          </snipcart-label>
+          <snipcart-select
+            name="customerType"
+            class="snipcart-form__select snipcart__font--secondary snipcart__font--bold"
+            required>
+            <option value="">Select one</option>
+            <option value="gardener">Gardener</option>
+            <option value="farmer">Farmer</option>
+            <option value="researcher">Researcher</option>
+            <option value="commercial-grower">Commercial grower</option>
+            <option value="other">Other</option>
+          </snipcart-select>
+        </div>
+
+        <div class="snipcart-form__field">
+          <p class="snipcart__font--tiny">Primary goal for this order</p>
+
+          <snipcart-radio name="primaryGoal" value="improve-yield">
+            Improve yield
+          </snipcart-radio>
+
+          <snipcart-radio name="primaryGoal" value="improve-soil-health">
+            Improve soil health
+          </snipcart-radio>
+
+          <snipcart-radio name="primaryGoal" value="improve-nutrition">
+            Improve nutrition
+          </snipcart-radio>
+
+          <snipcart-radio name="primaryGoal" value="reduce-chemical-use">
+            Reduce chemical use
+          </snipcart-radio>
+
+          <snipcart-radio name="primaryGoal" value="research-testing">
+            Research / product testing
+          </snipcart-radio>
+        </div>
+
+        <div class="snipcart-form__field">
+          <snipcart-label for="growingScale" class="snipcart__font--tiny">
+            Scale
+          </snipcart-label>
+          <snipcart-select
+            name="growingScale"
+            class="snipcart-form__select snipcart__font--secondary snipcart__font--bold">
+            <option value="">Select one</option>
+            <option value="home-garden">Home garden</option>
+            <option value="small-farm">Small farm</option>
+            <option value="large-farm">Large farm</option>
+            <option value="organization">Organization / institution</option>
+          </snipcart-select>
+        </div>
+
+        <div class="snipcart-form__field">
+          <snipcart-label for="orderNotes" class="snipcart__font--tiny">
+            Anything we should know? (optional)
+          </snipcart-label>
+          <snipcart-textarea name="orderNotes"></snipcart-textarea>
+        </div>
+
+        <div class="snipcart-form__field">
+          <div class="snipcart-form__field-checkbox">
+            <snipcart-checkbox name="marketingConsent"></snipcart-checkbox>
+            <snipcart-label
+              for="marketingConsent"
+              class="snipcart__font--tiny snipcart-form__label--checkbox">
+              I’m okay with GenTrek using these responses to improve products and marketing
+            </snipcart-label>
+          </div>
+        </div>
+      </fieldset>
+    </billing>
+
+  </div>
+</body>
+</html>
