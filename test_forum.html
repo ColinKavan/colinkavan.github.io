@@ -3,6 +3,112 @@
 <head>
   <meta charset="utf-8" />
   <title>Snipcart Templates</title>
+
+  <style>
+    .snipcart-form__label,
+    .snipcart-label,
+    .snipcart__font--tiny,
+    .snipcart__font--secondary,
+    .snipcart-form__field p,
+    .snipcart-form__field legend,
+    .snipcart-form__field label,
+    .snipcart-form__field span {
+      font-size: 0.95rem !important;
+      line-height: 1.45;
+    }
+
+    .snipcart-form__select,
+    .snipcart-textbox,
+    .snipcart-textarea,
+    input,
+    select,
+    textarea {
+      font-size: 0.95rem !important;
+    }
+
+    .question-group {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .question-title {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .checkbox-grid-5 {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 0.5rem 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .checkbox-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.5rem 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .checkbox-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+      padding: 0.55rem 0.65rem;
+      border: 1px solid #d7d7d7;
+      border-radius: 8px;
+      background: #fff;
+      min-height: 56px;
+      box-sizing: border-box;
+    }
+
+    .checkbox-card input[type="checkbox"] {
+      margin-top: 0.15rem;
+      transform: scale(1.05);
+      flex-shrink: 0;
+    }
+
+    .checkbox-card label {
+      font-size: 0.93rem;
+      line-height: 1.3;
+      cursor: pointer;
+      margin: 0;
+    }
+
+    .inline-other-input {
+      margin-top: 0.5rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .helper-text {
+      font-size: 0.85rem;
+      margin-left: 0.25rem;
+      opacity: 0.8;
+      font-weight: 400;
+    }
+
+    .selection-warning {
+      margin-top: 0.4rem;
+      font-size: 0.85rem;
+      color: #a33;
+      display: none;
+    }
+
+    @media (max-width: 991px) {
+      .checkbox-grid-5 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .checkbox-grid-5,
+      .checkbox-grid-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="snipcart-templates">
@@ -36,22 +142,100 @@
             <fieldset class="snipcart-form__set">
               <legend class="snipcart__font--subtitle">Gardener questions</legend>
 
-              <div class="snipcart-form__field">
-                <snipcart-label for="gardenerGrows" class="snipcart__font--tiny">
+              <!-- WHAT DO YOU GROW -->
+              <div class="snipcart-form__field question-group">
+                <span class="question-title snipcart__font--tiny">
                   What do you grow?
-                </snipcart-label>
-                <snipcart-select name="gardenerGrows">
-                  <option value="">Select one</option>
-                  <option value="vegetables">Vegetables</option>
-                  <option value="flowers">Flowers</option>
-                  <option value="herbs">Herbs</option>
-                  <option value="fruit">Fruit</option>
-                  <option value="mixed-garden">Mixed garden</option>
-                  <option value="native-plants">Native plants / landscaping</option>
-                  <option value="other">Other</option>
-                </snipcart-select>
+                </span>
+
+                <div class="checkbox-grid-5">
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowVegetables" name="gardenerGrowsVegetables" value="vegetables">
+                    <label for="gardenerGrowVegetables">Vegetables</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowFlowers" name="gardenerGrowsFlowers" value="flowers">
+                    <label for="gardenerGrowFlowers">Flowers</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowHerbs" name="gardenerGrowsHerbs" value="herbs">
+                    <label for="gardenerGrowHerbs">Herbs</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowFruit" name="gardenerGrowsFruit" value="fruit">
+                    <label for="gardenerGrowFruit">Fruit</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowBerries" name="gardenerGrowsBerries" value="berries">
+                    <label for="gardenerGrowBerries">Berries</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowHouseplants" name="gardenerGrowsHouseplants" value="houseplants">
+                    <label for="gardenerGrowHouseplants">Houseplants</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowNativePlants" name="gardenerGrowsNativePlants" value="native-plants">
+                    <label for="gardenerGrowNativePlants">Native plants</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowShrubs" name="gardenerGrowsShrubs" value="shrubs">
+                    <label for="gardenerGrowShrubs">Shrubs</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowTrees" name="gardenerGrowsTrees" value="trees">
+                    <label for="gardenerGrowTrees">Trees</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowLawn" name="gardenerGrowsLawn" value="lawn-turf">
+                    <label for="gardenerGrowLawn">Lawn / turf</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowContainers" name="gardenerGrowsContainers" value="container-garden">
+                    <label for="gardenerGrowContainers">Container garden</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowRaisedBeds" name="gardenerGrowsRaisedBeds" value="raised-beds">
+                    <label for="gardenerGrowRaisedBeds">Raised beds</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowCutFlowers" name="gardenerGrowsCutFlowers" value="cut-flowers">
+                    <label for="gardenerGrowCutFlowers">Cut flowers</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowHydroponic" name="gardenerGrowsHydroponic" value="hydroponic">
+                    <label for="gardenerGrowHydroponic">Hydroponic</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGrowOtherToggle" name="gardenerGrowsOtherSelected" value="other">
+                    <label for="gardenerGrowOtherToggle">Other</label>
+                  </div>
+                </div>
+
+                <input
+                  type="text"
+                  id="gardenerGrowOtherText"
+                  name="gardenerGrowsOtherText"
+                  class="snipcart-textbox inline-other-input"
+                  placeholder="Please specify other"
+                  style="display:none;"
+                >
               </div>
 
+              <!-- EXPERIENCE -->
               <div class="snipcart-form__field">
                 <snipcart-label for="gardenerExperience" class="snipcart__font--tiny">
                   How long have you been gardening?
@@ -65,19 +249,52 @@
                 </snipcart-select>
               </div>
 
-              <div class="snipcart-form__field">
-                <snipcart-label for="gardenerGoal" class="snipcart__font--tiny">
-                  What are your goals?
-                </snipcart-label>
-                <snipcart-select name="gardenerGoal">
-                  <option value="">Select one</option>
-                  <option value="higher-yields">Higher yields</option>
-                  <option value="healthier-plants">Healthier plants</option>
-                  <option value="better-flavor-nutrition">Better flavor / nutrition</option>
-                  <option value="reduce-chemical-use">Reduce chemical use</option>
-                  <option value="improve-soil-health">Improve soil health</option>
-                  <option value="water-retention-resilience">Better water retention / resilience</option>
-                </snipcart-select>
+              <!-- GOALS -->
+              <div class="snipcart-form__field question-group">
+                <span class="question-title snipcart__font--tiny">
+                  What are your goals?<span class="helper-text">(Select up to 3)</span>
+                </span>
+
+                <div class="checkbox-grid-3" id="gardenerGoalsGroup">
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGoalYield" name="gardenerGoalHigherYields" value="higher-yields" class="gardener-goal-checkbox">
+                    <label for="gardenerGoalYield">Higher yields</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGoalHealthy" name="gardenerGoalHealthierPlants" value="healthier-plants" class="gardener-goal-checkbox">
+                    <label for="gardenerGoalHealthy">Healthier plants</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGoalFlavor" name="gardenerGoalBetterFlavor" value="better-flavor" class="gardener-goal-checkbox">
+                    <label for="gardenerGoalFlavor">Better flavor</label>
+                  </div>
+
+                   <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGoalNutrition" name="gardenerGoalBetterNutrition" value="better-nutrition" class="gardener-goal-checkbox">
+                    <label for="gardenerGoalFlavor">Improved nutrition</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGoalChemical" name="gardenerGoalReduceChemicalUse" value="reduce-chemical-use" class="gardener-goal-checkbox">
+                    <label for="gardenerGoalChemical">Reduce chemical use</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGoalSoil" name="gardenerGoalImproveSoilHealth" value="improve-soil-health" class="gardener-goal-checkbox">
+                    <label for="gardenerGoalSoil">Improve soil health</label>
+                  </div>
+
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="gardenerGoalWater" name="gardenerGoalWaterRetentionResilience" value="water-retention-resilience" class="gardener-goal-checkbox">
+                    <label for="gardenerGoalWater">Better water retention / resilience</label>
+                  </div>
+                </div>
+
+                <div id="gardenerGoalsWarning" class="selection-warning">
+                  Please select no more than 3 goals.
+                </div>
               </div>
             </fieldset>
           </div>
@@ -200,5 +417,112 @@
     </billing>
 
   </div>
+
+  <script>
+    (function () {
+      function bindOnce(element, key, handler) {
+        if (!element) return;
+        const attr = "data-bound-" + key;
+        if (element.hasAttribute(attr)) return;
+        element.addEventListener("change", handler);
+        element.setAttribute(attr, "true");
+      }
+
+      function setupClientTypeLogic() {
+        const selector = document.getElementById("clientTypeSelector");
+        const gardener = document.getElementById("gardenerQuestions");
+        const grower = document.getElementById("growerQuestions");
+        const researcher = document.getElementById("researcherQuestions");
+
+        if (!selector || !gardener || !grower || !researcher) return;
+
+        function updateVisibility() {
+          const value = selector.value;
+          gardener.style.display = value === "gardener" ? "" : "none";
+          grower.style.display = value === "industry-grower" ? "" : "none";
+          researcher.style.display = value === "researcher" ? "" : "none";
+        }
+
+        bindOnce(selector, "client-type", updateVisibility);
+        updateVisibility();
+      }
+
+      function setupGardenerOtherField() {
+        const otherToggle = document.getElementById("gardenerGrowOtherToggle");
+        const otherText = document.getElementById("gardenerGrowOtherText");
+
+        if (!otherToggle || !otherText) return;
+
+        function updateOtherField() {
+          otherText.style.display = otherToggle.checked ? "" : "none";
+          if (!otherToggle.checked) {
+            otherText.value = "";
+          }
+        }
+
+        bindOnce(otherToggle, "gardener-other", updateOtherField);
+        updateOtherField();
+      }
+
+      function setupGardenerGoalLimit() {
+        const checkboxes = Array.from(document.querySelectorAll(".gardener-goal-checkbox"));
+        const warning = document.getElementById("gardenerGoalsWarning");
+
+        if (!checkboxes.length) return;
+
+        function updateGoalLimit(changedBox) {
+          const checked = checkboxes.filter(cb => cb.checked);
+
+          if (checked.length > 3 && changedBox) {
+            changedBox.checked = false;
+          }
+
+          const checkedNow = checkboxes.filter(cb => cb.checked).length;
+
+          if (warning) {
+            warning.style.display = checked.length > 3 ? "block" : "none";
+          }
+
+          checkboxes.forEach(cb => {
+            if (!cb.checked) {
+              cb.disabled = checkedNow >= 3;
+            } else {
+              cb.disabled = false;
+            }
+          });
+        }
+
+        checkboxes.forEach(cb => {
+          bindOnce(cb, "goal-limit", function () {
+            updateGoalLimit(cb);
+          });
+        });
+
+        updateGoalLimit(null);
+      }
+
+      function setupAllSurveyLogic() {
+        setupClientTypeLogic();
+        setupGardenerOtherField();
+        setupGardenerGoalLimit();
+      }
+
+      function initializeWhenReady() {
+        setupAllSurveyLogic();
+
+        const observer = new MutationObserver(function () {
+          setupAllSurveyLogic();
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initializeWhenReady);
+      } else {
+        initializeWhenReady();
+      }
+    })();
+  </script>
 </body>
 </html>
