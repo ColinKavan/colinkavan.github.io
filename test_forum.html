@@ -304,6 +304,7 @@
             <fieldset class="snipcart-form__set">
               <legend class="snipcart__font--subtitle">Industry grower questions</legend>
 
+              <!-- What do you grow? -->
               <div class="snipcart-form__field question-group">
                 <span class="question-title snipcart__font--tiny">
                   What do you grow?
@@ -431,6 +432,7 @@
                 >
               </div>
 
+              <!-- How large is your farm -->
               <div class="snipcart-form__field">
                 <snipcart-label for="growerFarmSize" class="snipcart__font--tiny">
                   How large is your farm?
@@ -446,40 +448,116 @@
                 </snipcart-select>
               </div>
 
-              <div class="snipcart-form__field">
-                <snipcart-label for="growerChallenges" class="snipcart__font--tiny">
-                  What are your current challenges?
-                </snipcart-label>
-                <snipcart-select name="growerChallenges">
-                  <option value="">Select one</option>
-                  <option value="poor-soil-health">Poor soil health</option>
-                  <option value="high-input-costs">High input costs</option>
-                  <option value="water-management">Water management</option>
-                  <option value="soil-compaction">Soil compaction / structure</option>
-                  <option value="disease-pressure">Disease pressure</option>
-                  <option value="pest-pressure">Pest pressure</option>
-                  <option value="inconsistent-yields">Inconsistent yields</option>
-                  <option value="nutrient-management">Nutrient management</option>
-                  <option value="weed-management">Weed management</option>
-                </snipcart-select>
+              <!-- Current Challanges -->
+              
+              <div class="snipcart-form__field question-group">
+                <span class="question-title snipcart__font--tiny">
+                  What are your current challenges?<span class="helper-text">(Select up to 3)</span>
+                </span>
+              
+                <div class="checkbox-grid-3" id="farmerChallengesGroup">
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerChallengeSoil" name="farmerChallengePoorSoilHealth" value="poor-soil-health" class="farmer-challenge-checkbox">
+                    <label for="farmerChallengeSoil">Poor soil health</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerChallengeCost" name="farmerChallengeHighInputCosts" value="high-input-costs" class="farmer-challenge-checkbox">
+                    <label for="farmerChallengeCost">High input costs</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerChallengeWater" name="farmerChallengeWaterManagement" value="water-management" class="farmer-challenge-checkbox">
+                    <label for="farmerChallengeWater">Water management</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerChallengeCompaction" name="farmerChallengeSoilCompaction" value="soil-compaction" class="farmer-challenge-checkbox">
+                    <label for="farmerChallengeCompaction">Soil compaction / structure</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerChallengeDisease" name="farmerChallengeDiseasePressure" value="disease-pressure" class="farmer-challenge-checkbox">
+                    <label for="farmerChallengeDisease">Disease pressure</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerChallengePest" name="farmerChallengePestPressure" value="pest-pressure" class="farmer-challenge-checkbox">
+                    <label for="farmerChallengePest">Pest pressure</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerChallengeYield" name="farmerChallengeInconsistentYields" value="inconsistent-yields" class="farmer-challenge-checkbox">
+                    <label for="farmerChallengeYield">Inconsistent yields</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerChallengeNutrients" name="farmerChallengeNutrientManagement" value="nutrient-management" class="farmer-challenge-checkbox">
+                    <label for="farmerChallengeNutrients">Nutrient management</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerChallengeWeeds" name="farmerChallengeWeedManagement" value="weed-management" class="farmer-challenge-checkbox">
+                    <label for="farmerChallengeWeeds">Weed management</label>
+                  </div>
+                </div>
+              
+                <div id="farmerChallengesWarning" class="selection-warning">
+                  Please select no more than 3 challenges.
+                </div>
               </div>
 
-              <div class="snipcart-form__field">
-                <snipcart-label for="growerGoals" class="snipcart__font--tiny">
-                  What are your goals?
-                </snipcart-label>
-                <snipcart-select name="growerGoals">
-                  <option value="">Select one</option>
-                  <option value="increase-yield">Increase yield</option>
-                  <option value="reduce-input-costs">Reduce input costs</option>
-                  <option value="improve-soil-health">Improve soil health</option>
-                  <option value="improve-water-efficiency">Improve water efficiency</option>
-                  <option value="improve-crop-quality">Improve crop quality</option>
-                  <option value="reduce-chemical-use">Reduce chemical use</option>
-                  <option value="increase-resilience">Increase resilience</option>
-                </snipcart-select>
+              <!-- What are your goals? -->
+              
+              <div class="snipcart-form__field question-group">
+                <span class="question-title snipcart__font--tiny">
+                  What are your goals?<span class="helper-text">(Select up to 3)</span>
+                </span>
+              
+                <div class="checkbox-grid-3" id="farmerGoalsGroup">
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerGoalYield" name="farmerGoalIncreaseYield" value="increase-yield" class="farmer-goal-checkbox">
+                    <label for="farmerGoalYield">Increase yield</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerGoalCosts" name="farmerGoalReduceInputCosts" value="reduce-input-costs" class="farmer-goal-checkbox">
+                    <label for="farmerGoalCosts">Reduce input costs</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerGoalSoil" name="farmerGoalImproveSoilHealth" value="improve-soil-health" class="farmer-goal-checkbox">
+                    <label for="farmerGoalSoil">Improve soil health</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerGoalWater" name="farmerGoalImproveWaterEfficiency" value="improve-water-efficiency" class="farmer-goal-checkbox">
+                    <label for="farmerGoalWater">Improve water efficiency</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerGoalQuality" name="farmerGoalImproveCropQuality" value="improve-crop-quality" class="farmer-goal-checkbox">
+                    <label for="farmerGoalQuality">Improve crop quality</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerGoalChemical" name="farmerGoalReduceChemicalUse" value="reduce-chemical-use" class="farmer-goal-checkbox">
+                    <label for="farmerGoalChemical">Reduce chemical use</label>
+                  </div>
+              
+                  <div class="checkbox-card">
+                    <input type="checkbox" id="farmerGoalResilience" name="farmerGoalIncreaseResilience" value="increase-resilience" class="farmer-goal-checkbox">
+                    <label for="farmerGoalResilience">Increase resilience</label>
+                  </div>
+                </div>
+              
+                <div id="farmerGoalsWarning" class="selection-warning">
+                  Please select no more than 3 goals.
+                </div>
               </div>
 
+              <!-- Operation Size? -->
+              
               <div class="snipcart-form__field">
                 <snipcart-label for="growerTeamSize" class="snipcart__font--tiny">
                   How many people are in your operation?
