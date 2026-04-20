@@ -96,18 +96,35 @@
       display: none;
     }
 
-    @media (max-width: 991px) {
-      .checkbox-grid-5 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
+    @media (max-width: 1200px) {
+  .checkbox-grid-5 {
+    grid-template-columns: repeat(4, minmax(140px, 1fr));
+  }
+}
 
-    @media (max-width: 640px) {
-      .checkbox-grid-5,
-      .checkbox-grid-3 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
+@media (max-width: 991px) {
+  .checkbox-grid-5 {
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+  }
+
+  .checkbox-grid-3 {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .checkbox-grid-5,
+  .checkbox-grid-3 {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .checkbox-grid-5,
+  .checkbox-grid-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
   </style>
 </head>
 <body>
