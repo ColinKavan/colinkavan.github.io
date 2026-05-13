@@ -31,20 +31,6 @@
             </snipcart-select>
           </div>
 
-
-          <!-- Test Checkbox -->
-          <!-- <div class="snipcart-form__field">
-            <div class="snipcart-form__field-checkbox">
-              <snipcart-checkbox name="testCheckbox"></snipcart-checkbox>
-          
-              <snipcart-label
-                for="testCheckbox"
-                class="snipcart__font--secondary snipcart-form__label--checkbox">
-                Test checkbox
-              </snipcart-label>
-            </div>
-          </div> -->
-
           <!-- GARDENER -->
           <div id="gardenerQuestions" style="display:none;">
             <fieldset class="snipcart-form__set">
@@ -55,194 +41,386 @@
                 <span class="question-title snipcart__font--secondary">
                   What do you grow?
                 </span>
-
-                <div class="checkbox-grid-5">
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowTomato" name="gardenerGrowsTomato" value="tomato">
-                    <label for="gardenerGrowTomato">Tomato</label>
+              
+                <div class="checkbox-grid-5 native-checkbox-grid" id="gardenerGrowsGroup">
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsTomato"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsTomato" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Tomato
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowCucumber" name="gardenerGrowsCucumber" value="cucumber">
-                    <label for="gardenerGrowCucumber">Cucumber</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsCucumber"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsCucumber" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Cucumber
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowPepper" name="gardenerGrowsPepper" value="pepper">
-                    <label for="gardenerGrowPepper">Pepper</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsPepper"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsPepper" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Pepper
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowGreenBeans" name="gardenerGrowsGreenBeans" value="green-beans">
-                    <label for="gardenerGrowGreenBeans">Green beans</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsGreenBeans"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsGreenBeans" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Green beans
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowCarrots" name="gardenerGrowsCarrots" value="carrots">
-                    <label for="gardenerGrowCarrots">Carrots</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsCarrots"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsCarrots" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Carrots
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowSquash" name="gardenerGrowsSquash" value="squash">
-                    <label for="gardenerGrowSquash">Squash</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsSquash"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsSquash" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Squash
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowOnions" name="gardenerGrowsOnions" value="onions">
-                    <label for="gardenerGrowOnions">Onions</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsOnions"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsOnions" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Onions
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowLetus" name="gardenerGrowsLetus" value="lettuce">
-                    <label for="gardenerGrowLetus">Lettuce / Leafy Greens</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsLettuceLeafyGreens"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsLettuceLeafyGreens" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Lettuce / Leafy Greens
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowPeas" name="gardenerGrowsPeas" value="peas">
-                    <label for="gardenerGrowPeas">Peas</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsPeas"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsPeas" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Peas
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowRadishes" name="gardenerGrowsRadishes" value="radishes">
-                    <label for="gardenerGrowRadishes">Radishes</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsRadishes"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsRadishes" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Radishes
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowPotatoes" name="gardenerGrowsPotatoes" value="potatoes">
-                    <label for="gardenerGrowPotatoes">Potatoes</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsPotatoes"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsPotatoes" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Potatoes
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowKale" name="gardenerGrowsKale" value="kale">
-                    <label for="gardenerGrowKale">Kale</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsKale"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsKale" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Kale
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowGarlick" name="gardenerGrowsGarlic" value="garlic">
-                    <label for="gardenerGrowGarlick">Garlic</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsGarlic"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsGarlic" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Garlic
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowFlowers" name="gardenerGrowsFlowers" value="flowers">
-                    <label for="gardenerGrowFlowers">Flowers</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsFlowers"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsFlowers" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Flowers
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowMelon" name="gardenerGrowsMelon" value="melon">
-                    <label for="gardenerGrowMelon">Melon</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsMelon"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsMelon" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Melon
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowPotato" name="gardenerGrowsPotato" value="potato">
-                    <label for="gardenerGrowPotato">Potato</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsCorn"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsCorn" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Corn
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowCorn" name="gardenerGrowsCorn" value="corn">
-                    <label for="gardenerGrowCorn">Corn</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsSoybean"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsSoybean" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Soybean
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowSoybean" name="gardenerGrowsSoybean" value="soybean">
-                    <label for="gardenerGrowSoybean">Soybean</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsWheat"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsWheat" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Wheat
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowWheat" name="gardenerGrowsWheat" value="wheat">
-                    <label for="gardenerGrowWheat">Wheat</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsBarley"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsBarley" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Barley
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowBarley" name="gardenerGrowsBarley" value="barley">
-                    <label for="gardenerGrowBarley">Barley</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsSorghum"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsSorghum" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Sorghum
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowSorghum" name="gardenerGrowsSorghum" value="sorghum">
-                    <label for="gardenerGrowSorghum">Sorghum</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsRice"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsRice" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Rice
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowRice" name="gardenerGrowsRice" value="rice">
-                    <label for="gardenerGrowRice">Rice</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsSugarBeet"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsSugarBeet" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Sugar Beet
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowSugarBeet" name="gardenerGrowsSugarBeet" value="sugar-beet">
-                    <label for="gardenerGrowSugarBeet">Sugar Beet</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsGrapes"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsGrapes" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Grapes
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowGrapes" name="gardenerGrowsGrapes" value="grapes">
-                    <label for="gardenerGrowGrapes">Grapes</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsApples"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsApples" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Apples
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowApples" name="gardenerGrowsApples" value="apples">
-                    <label for="gardenerGrowApples">Apples</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsOranges"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsOranges" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Oranges
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowOranges" name="gardenerGrowsOranges" value="oranges">
-                    <label for="gardenerGrowOranges">Oranges</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsStrawberry"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsStrawberry" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Strawberry
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowStrawberry" name="gardenerGrowsStrawberry" value="strawberry">
-                    <label for="gardenerGrowStrawberry">Strawberry</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsBlueberry"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsBlueberry" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Blueberry
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowBlueberry" name="gardenerGrowsBlueberry" value="blueberry">
-                    <label for="gardenerGrowBlueberry">Blueberry</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsPeach"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsPeach" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Peach
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowPeach" name="gardenerGrowsPeach" value="peach">
-                    <label for="gardenerGrowPeach">Peach</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsPear"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsPear" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Pear
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowPear" name="gardenerGrowsPear" value="pear">
-                    <label for="gardenerGrowPear">Pear</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsCherry"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsCherry" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Cherry
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowCherry" name="gardenerGrowsCherry" value="cherry">
-                    <label for="gardenerGrowCherry">Cherry</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsAvocado"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsAvocado" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Avocado
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowAvocado" name="gardenerGrowsAvocado" value="avocado">
-                    <label for="gardenerGrowAvocado">Avocado</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsLawn"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsLawn" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Lawn
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowLawn" name="gardenerGrowsLawn" value="lawn">
-                    <label for="gardenerGrowLawn">Lawn</label>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="gardenerGrowsHerbs"></snipcart-checkbox>
+                        <snipcart-label for="gardenerGrowsHerbs" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Herbs
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowHerbs" name="gardenerGrowsHerbs" value="herbs">
-                    <label for="gardenerGrowHerbs">Herbs</label>
-                  </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="gardenerGrowOtherToggle" name="gardenerGrowsOtherSelected" value="other">
-                    <label for="gardenerGrowOtherToggle">Other</label>
-                  </div>
+              
                 </div>
-
-                <input
-                  type="text"
-                  id="gardenerGrowOtherText"
-                  name="gardenerGrowsOtherText"
-                  class="snipcart-textbox inline-other-input"
-                  placeholder="Please specify other"
-                  style="display:none;"
-                >
+              
+                <!-- OTHER FIELD -->
+                <div class="snipcart-form__field" style="margin-top: 0.75rem;">
+                  <snipcart-label for="gardenerGrowsOtherText" class="snipcart__font--secondary">
+                    Other crop or plant not listed
+                  </snipcart-label>
+                  <snipcart-input
+                    name="gardenerGrowsOtherText"
+                    id="gardenerGrowsOtherText"
+                    placeholder="Please specify other">
+                  </snipcart-input>
+                </div>
               </div>
-
               <!-- GOALS -->
               <div class="snipcart-form__field question-group">
                 <span class="question-title snipcart__font--secondary">
@@ -336,7 +514,7 @@
                         <snipcart-label
                           for="gardenerGoalWaterRetentionResilience"
                           class="snipcart__font--secondary snipcart-form__label--checkbox">
-                          Better water retention / resilience
+                          Water Retention
                         </snipcart-label>
                       </div>
                     </div>
@@ -731,18 +909,6 @@
               </div>
             </fieldset>
           </div>
-
-          <!-- <!-- HIDDEN CAPTURE FIELDS FOR SNIPCART ORDER DETAILS -->
-          <!-- <div style="display:none;">
-            <input type="hidden" name="Client Type" id="clientTypeCaptured">
-          
-            <input type="hidden" name="Gardener Grows" id="gardenerGrowsCaptured">
-            <input type="hidden" name="Gardener Goals" id="gardenerGoalsCaptured">
-          
-            <input type="hidden" name="Farmer Grows" id="farmerGrowsCaptured">
-            <input type="hidden" name="Farmer Challenges" id="farmerChallengesCaptured">
-            <input type="hidden" name="Farmer Goals" id="farmerGoalsCaptured">
-          </div> --> -->
         </fieldset>
       </div>
     </billing>
