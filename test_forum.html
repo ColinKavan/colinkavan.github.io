@@ -11,7 +11,7 @@
       <div>
         <fieldset class="snipcart-form__set">
           <legend class="snipcart__font--subtitle">
-            Order questionnaire Test
+            Order questionnaire
           </legend>
 
           <!-- CLIENT TYPE -->
@@ -956,126 +956,234 @@
                 </snipcart-select>
               </div>
 
-              <!-- Current Challanges -->
-              
+              <!-- Current Challenges -->
               <div class="snipcart-form__field question-group">
                 <span class="question-title snipcart__font--secondary">
                   What are your current challenges?<span class="helper-text">(Select up to 3)</span>
                 </span>
               
-                <div class="checkbox-grid-3" id="farmerChallengesGroup">
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengeSoil" name="farmerChallengePoorSoilHealth" value="poor-soil-health" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengeSoil">Poor soil health</label>
+                <div class="checkbox-grid-3 native-checkbox-grid" id="farmerChallengesGroup">
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengePoorSoilHealth"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengePoorSoilHealth" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Poor soil health
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengeCost" name="farmerChallengeHighInputCosts" value="high-input-costs" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengeCost">High input costs</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengeHighInputCosts"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengeHighInputCosts" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          High input costs
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengeWater" name="farmerChallengeWaterManagement" value="water-management" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengeWater">Water management</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengeWaterManagement"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengeWaterManagement" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Water management
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengeCompaction" name="farmerChallengeSoilCompaction" value="soil-compaction" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengeCompaction">Soil compaction / structure</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengeSoilCompaction"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengeSoilCompaction" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Soil compaction / structure
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengeDisease" name="farmerChallengeDiseasePressure" value="disease-pressure" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengeDisease">Disease pressure</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengeDiseasePressure"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengeDiseasePressure" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Disease pressure
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengePest" name="farmerChallengePestPressure" value="pest-pressure" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengePest">Pest pressure</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengePestPressure"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengePestPressure" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Pest pressure
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengeYield" name="farmerChallengeInconsistentYields" value="inconsistent-yields" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengeYield">Inconsistent yields</label>
-                  </div>
-
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengeLowOrganicMatter" name="farmerChallengeLowOrganicMatter" value="low-organic-matter" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengeLowOrganicMatter">Low organic matter</label>
-                  </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengeLowBiologicalActivity" name="farmerChallengeLowBiologicalActivity" value="low-biological-activity" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengeLowBiologicalActivity">Low biological activity</label>
-                  </div>
-                  
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengeRootDisease" name="farmerChallengeRootDisease" value="root-disease" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengeRootDisease">Root disease</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengeInconsistentYields"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengeInconsistentYields" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Inconsistent yields
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengeNutrients" name="farmerChallengeNutrientManagement" value="nutrient-management" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengeNutrients">Nutrient management</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengeLowOrganicMatter"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengeLowOrganicMatter" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Low organic matter
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerChallengeWeeds" name="farmerChallengeWeedManagement" value="weed-management" class="farmer-challenge-checkbox">
-                    <label for="farmerChallengeWeeds">Weed management</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengeLowBiologicalActivity"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengeLowBiologicalActivity" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Low biological activity
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                </div>
               
-                <div id="farmerChallengesWarning" class="selection-warning">
-                  Please select no more than 3 challenges.
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengeRootDisease"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengeRootDisease" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Root disease
+                        </snipcart-label>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengeNutrientManagement"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengeNutrientManagement" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Nutrient management
+                        </snipcart-label>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerChallengeWeedManagement"></snipcart-checkbox>
+                        <snipcart-label for="farmerChallengeWeedManagement" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Weed management
+                        </snipcart-label>
+                      </div>
+                    </div>
+                  </div>
+              
                 </div>
               </div>
 
               <!-- What are your goals? -->
-              
               <div class="snipcart-form__field question-group">
                 <span class="question-title snipcart__font--secondary">
                   What are your goals?<span class="helper-text">(Select up to 3)</span>
                 </span>
               
-                <div class="checkbox-grid-3" id="farmerGoalsGroup">
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerGoalYield" name="farmerGoalIncreaseYield" value="increase-yield" class="farmer-goal-checkbox">
-                    <label for="farmerGoalYield">Increase yield</label>
+                <div class="checkbox-grid-3 native-checkbox-grid" id="farmerGoalsGroup">
+              
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerGoalIncreaseYield"></snipcart-checkbox>
+                        <snipcart-label for="farmerGoalIncreaseYield" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Increase yield
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerGoalCosts" name="farmerGoalReduceInputCosts" value="reduce-input-costs" class="farmer-goal-checkbox">
-                    <label for="farmerGoalCosts">Reduce input costs</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerGoalReduceInputCosts"></snipcart-checkbox>
+                        <snipcart-label for="farmerGoalReduceInputCosts" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Reduce input costs
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerGoalSoil" name="farmerGoalImproveSoilHealth" value="improve-soil-health" class="farmer-goal-checkbox">
-                    <label for="farmerGoalSoil">Improve soil health</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerGoalImproveSoilHealth"></snipcart-checkbox>
+                        <snipcart-label for="farmerGoalImproveSoilHealth" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Improve soil health
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerGoalWater" name="farmerGoalImproveWaterEfficiency" value="improve-water-efficiency" class="farmer-goal-checkbox">
-                    <label for="farmerGoalWater">Improve water efficiency</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerGoalImproveWaterEfficiency"></snipcart-checkbox>
+                        <snipcart-label for="farmerGoalImproveWaterEfficiency" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Improve water efficiency
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerGoalQuality" name="farmerGoalImproveCropQuality" value="improve-crop-quality" class="farmer-goal-checkbox">
-                    <label for="farmerGoalQuality">Improve crop quality</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerGoalImproveCropQuality"></snipcart-checkbox>
+                        <snipcart-label for="farmerGoalImproveCropQuality" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Improve crop quality
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerGoalChemical" name="farmerGoalReduceChemicalUse" value="reduce-chemical-use" class="farmer-goal-checkbox">
-                    <label for="farmerGoalChemical">Reduce chemical use</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerGoalReduceChemicalUse"></snipcart-checkbox>
+                        <snipcart-label for="farmerGoalReduceChemicalUse" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Reduce chemical use
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
               
-                  <div class="checkbox-card">
-                    <input type="checkbox" id="farmerGoalResilience" name="farmerGoalIncreaseResilience" value="increase-resilience" class="farmer-goal-checkbox">
-                    <label for="farmerGoalResilience">Increase resilience</label>
+                  <div class="checkbox-card native-checkbox-card">
+                    <div class="snipcart-form__field">
+                      <div class="snipcart-form__field-checkbox">
+                        <snipcart-checkbox name="farmerGoalIncreaseResilience"></snipcart-checkbox>
+                        <snipcart-label for="farmerGoalIncreaseResilience" class="snipcart__font--secondary snipcart-form__label--checkbox">
+                          Increase resilience
+                        </snipcart-label>
+                      </div>
+                    </div>
                   </div>
-                </div>
               
-                <div id="farmerGoalsWarning" class="selection-warning">
-                  Please select no more than 3 goals.
                 </div>
               </div>
 
